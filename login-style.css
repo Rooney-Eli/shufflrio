@@ -1,0 +1,250 @@
+
+.prompt-container {
+    height: 500px;
+    background-color: #8A8A8AAA;
+    border-radius: 0.5em;
+    padding:0;
+    box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.2),
+            0 0  0 0px rgb(255,255,255),
+            0.7em 0.7em 1em rgba(0,0,0,0.9);
+}
+
+label {
+    overflow: hidden;
+}
+
+#banner-name {
+    overflow: hidden;
+    font-size: 3rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    text-align: center;
+}
+
+#banner-phrase {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.login {
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(10, 10%);
+}
+
+#username-label {
+    /*margin-top: 4rem;*/
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+#username-label.inactive {
+    visibility: hidden;
+}
+
+#username-input {
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#username-input.inactive {
+    visibility: hidden;
+}
+
+#password-label {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+#password-label.inactive {
+    visibility: hidden;
+}
+
+#password-input {
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#password-input.inactive {
+    visibility: hidden;
+}
+
+
+#question-answer-label {
+    /*visibility: hidden;*/
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#question-answer-input {
+    /*visibility: hidden;*/
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#question-answer-input.active {
+    visibility: visible;
+}
+
+#question-label {
+    /*visibility: hidden;*/
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+#question-label.active {
+    visibility: visible;
+}
+
+#question-input {
+    /*visibility: hidden;*/
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#question-input.active {
+    visibility: visible;
+}
+
+#new-password-label {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#new-password-input {
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#confirm-new-password-label {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#confirm-new-password-input {
+    text-align: center;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+label.invalid {
+    color: #FF0000
+}
+label.valid {
+    color: #00E900
+}
+
+.text-input-box.invalid {
+    background-color: #FF000055;
+}
+
+#confirmation-label {
+    /*visibility: hidden;*/
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#submit-btn {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+#next-btn {
+    visibility: hidden;
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+#cancel-btn {
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+
+.text-input-box {
+    overflow: auto;
+    border-radius: 0.5em;
+    padding:0;
+}
+
+.text-button {
+    margin-top: 5px;
+    padding: 10px 1px 10px 0;
+    height: 50%;
+    background-color: #FFFFFF00;
+    border: 0;
+    color: blue;
+    grid-column: 2/3;
+    grid-row: 9/10;
+    overflow: hidden;
+}
+
+
+
+.submit-button {
+    overflow: auto;
+    border-radius: 0.5em;
+    padding:0;
+    box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.2),
+            0 0  0 0 rgb(255,255,255),
+            0.4em 0.4em 0.2em rgba(0,0,0,0.6);
+}
+
+.submit-button:hover {
+    box-shadow:
+            inset 0 -3em 3em rgba(111,111,111,0.2),
+            0 0  0 0 rgb(255,255,255),
+            0.35em 0.35em 0.2em rgba(0,0,0,0.6);
+}
+
+
+
+@media screen and (max-height: 500px) {
+    html {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
