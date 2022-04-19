@@ -20,7 +20,7 @@ class AwesomeLogin extends HTMLElement {
         this.#render()
     }
 
-    connectedCallback() {
+    #attachEvents() {
         this.#loginBtn.addEventListener('click', () => {
             this.#usernameAttempt = this.#usernameBox.value
             this.#passwordAttempt = this.#passwordBox.value
@@ -57,33 +57,21 @@ class AwesomeLogin extends HTMLElement {
                 }
 
             }
-
-
         })
 
         this.#createBtn.addEventListener('click', () => {
             if(this.#isCreateMode) {
                 this.dispatchEvent(new CustomEvent('cancel-create-event', {
                     bubbles: true,
-                    composed: true,
-                    detail: {
-                        username: this.#usernameBox.value,
-                        password: this.#passwordBox.value
-                    }
+                    composed: true
                 }))
             } else {
                 this.dispatchEvent(new CustomEvent('enable-create-event', {
                     bubbles: true,
-                    composed: true,
-                    detail: {
-                        username: this.#usernameBox.value,
-                        password: this.#passwordBox.value
-                    }
+                    composed: true
                 }))
             }
         })
-
-
     }
 
     set data(value) {
@@ -107,7 +95,7 @@ class AwesomeLogin extends HTMLElement {
                 this.#createBtnText = "Cancel"
             }
             if(value.createEnable === 'disengage') {
-                this.#isCreateMode = true
+                this.#isCreateMode = false
                 this.#usernameLabelText = "Username"
                 this.#passwordLabelText = "Password"
                 this.#loginBtnText = "Login"
@@ -115,9 +103,6 @@ class AwesomeLogin extends HTMLElement {
             }
             this.#render()
         }
-
-
-
     }
 
     #render() {
@@ -233,6 +218,8 @@ class AwesomeLogin extends HTMLElement {
 
         this.#loginBtn = this.shadowRoot.querySelector('.login-btn')
         this.#createBtn = this.shadowRoot.querySelector('.create-btn')
+
+        this.#attachEvents()
 
     }
 }

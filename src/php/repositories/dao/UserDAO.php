@@ -26,8 +26,12 @@ class UserDAO {
 
         $stmt = $this->db->prepare($query);
 
+
+        $hashOptions = [ 'cost' => 12 ];
+        $hashedPass = password_hash($userCacheEntity->password, PASSWORD_BCRYPT, $hashOptions);
+
         $stmt->bindValue(':username', $userCacheEntity->username);
-        $stmt->bindValue(':password', $userCacheEntity->password);
+        $stmt->bindValue(':password', $hashedPass);
 
         $stmt->execute();
     }

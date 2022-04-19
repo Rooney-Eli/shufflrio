@@ -4,21 +4,15 @@ window.addEventListener('load', () => {
     const awesomeLogin = document.querySelector('awesome-login')
 
     this.addEventListener('login-event', (e) => {
-        console.log("Login event captured")
         authenticateUser(shufflrUrl + '/authenticateUser', e.detail.username, e.detail.password).then(result => {
             const {error} = result
             const {id} = result
             if(error !== undefined) {
                 if(error === 'username'){
-                    console.log("username error")
-
                     awesomeLogin.data = {
                         username: 'error'
                     }
-
                 } else {
-                    console.log('password error')
-
                     awesomeLogin.data = {
                         password: 'error'
                     }
@@ -27,9 +21,31 @@ window.addEventListener('load', () => {
             if(id !== undefined) {
                 window.location.reload()
             }
-
         })
     })
+
+    this.addEventListener('create-event', (e) => {
+        createUser(shufflrUrl + '/createUser', e.detail.username, e.detail.password).then(result => {
+            const {error} = result
+            const {id} = result
+            if(error !== undefined) {
+                if(error === 'username'){
+                    awesomeLogin.data = {
+                        username: 'error'
+                    }
+
+                } else {
+                    awesomeLogin.data = {
+                        password: 'error'
+                    }
+                }
+            }
+            if(id !== undefined) {
+                window.location.reload()
+            }
+        })
+    })
+
 
     this.addEventListener('enable-create-event', () => {
         console.log("captured enable create event")

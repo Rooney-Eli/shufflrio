@@ -24,13 +24,14 @@ class LoginService {
      */
     public function authenticateUser(UserDomainEntity $userLoginAttempt): int {
         $usernameAttempt = $userLoginAttempt->username;
+        $userId = -1;
         try {
             $userDataForUsername = $this->getUserByName($usernameAttempt);
         } catch (NotFoundException) {
             throw new IncorrectUsernameException("Username $usernameAttempt doesn't exist!");
         }
 
-        if($userLoginAttempt->password !== $userDataForUsername->password) {
+        if(!password_verify($userLoginAttempt->password, $userDataForUsername->password)){
             throw new IncorrectLoginAttemptException("Password for $usernameAttempt didn't match!");
         }
 
@@ -59,15 +60,5 @@ class LoginService {
         $this->usersRepository->createUser($userDomainEntity);
     }
 
-
-    public function validateUsername(string $username): bool {
-        if(strlen($username) == 0 ) return false;
-        return true;
-    }
-
-    public function validatePassword(string $password): bool {
-        if(strlen($password) == 0 ) return false;
-        return true;
-    }
 
 }
