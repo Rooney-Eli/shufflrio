@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #99FF99, #BBFFFF);
+}
+
+awesome-nav-bar {
+    flex: 0;
+}
+
+awesome-list {
+    flex: 1;
+    overflow: auto;
+}
+
+awesome-audio-player {
+    flex:0;
+}
