@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types = 1);
-//
+
 require_once './src/php/ShufflrApp.php';
 require_once './src/php/Config.php';
 require_once './src/php/DotEnv.php';
@@ -16,7 +16,7 @@ require_once './src/php/RequestRouter.php';
 //
 //
 //
-use Shufflrio\Src\Php\S;
+use Shufflrio\Src\Php\ShufflrApp;
 use Shufflrio\Src\Php\Config;
 use Shufflrio\Src\Php\DotEnv;
 use Shufflrio\Src\Di\Container;
