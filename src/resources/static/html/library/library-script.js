@@ -56,6 +56,11 @@ window.addEventListener('load', () => {
         // console.log(songId)
 
         console.log(listOfSongs[0])
+        const song = listOfSongs[0]
+        console.log(`Song from listofSongs is ${song}`)
+        console.log(`Songid from listofSongs is ${song.songId}`)
+        console.log(`Song name from listofSongs is ${song.name}`)
+        console.log(`Song title from listofSongs is ${song.title}`)
         return listOfSongs[0].filepath
 
         // const result = listOfSongs.find((song) => {
