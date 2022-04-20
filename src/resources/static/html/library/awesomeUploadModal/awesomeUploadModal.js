@@ -123,7 +123,7 @@ class AwesomeUploadModal extends HTMLElement {
                     
                     <div class="input-group">
                         <label>Filepath</label>
-                        <input class="album-input" type="text" spellcheck="false">
+                        <input class="filepath-input" type="text" spellcheck="false">
                     </div>
                     
                     <div class="button-group">

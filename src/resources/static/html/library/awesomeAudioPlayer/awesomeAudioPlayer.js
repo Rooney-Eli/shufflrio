@@ -38,10 +38,6 @@ class AwesomeAudioPlayer extends HTMLElement {
 
         this.#source = value.source
 
-        console.log(`AwesomeAudioPlayer: Title set to ${value.title}`)
-        console.log(`AwesomeAudioPlayer: Artist set to ${value.artist}`)
-        console.log(`AwesomeAudioPlayer: Source set to ${value.source}`)
-
         this.#initialized = false
         this.#render()
         this.#initializeAudio()
@@ -385,7 +381,6 @@ class AwesomeAudioPlayer extends HTMLElement {
     }
 
     #render() {
-        console.log("AwesomeAudioPlayer: rendering")
         this.shadowRoot.innerHTML = `
             ${AwesomeAudioPlayer.#style()}
             <div class="audio-player">
