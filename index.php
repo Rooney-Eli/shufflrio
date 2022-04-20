@@ -13,7 +13,6 @@ require_once './src/php/exceptions/RouteNotFoundException.php';
 require_once './src/php/exceptions/ContainerException.php';
 require_once './src/php/exceptions/NotFoundException.php';
 
-
 use Shufflrio\Src\Php\ShufflrApp;
 use Shufflrio\Src\Php\Config;
 use Shufflrio\Src\Php\DotEnv;
@@ -25,7 +24,7 @@ use Shufflrio\Src\Php\Controllers\LibraryController;
 use Shufflrio\Src\Php\Controllers\LoginController;
 
 
-$dotEnv = new DotEnv("./src/.env");
+$dotEnv = new DotEnv(".env");
 $dotEnv->load();
 
 $ct = new Container();
