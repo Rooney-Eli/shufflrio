@@ -48,6 +48,8 @@ window.addEventListener('load', () => {
                 }
             }
         )
+        console.log(foundSong.filepath)
+        console.log(foundSong)
         return foundSong.filepath
     }
 
