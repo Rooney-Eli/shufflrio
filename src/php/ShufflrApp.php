@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php;
 
-require_once './Database.php';
+require_once './src/php/Database.php';
 
 use Shufflrio\Src\Di\Container;
 use Shufflrio\Src\Php\Database;
