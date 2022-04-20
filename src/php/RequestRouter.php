@@ -4,20 +4,20 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php;
 
-require_once './HTTPMethod.php';
-require_once './attributes/Route.php';
-require_once './attributes/Get.php';
-require_once './attributes/Post.php';
+require_once './src/php/HTTPMethod.php';
+require_once './src/php/attributes/Route.php';
+require_once './src/php/attributes/Get.php';
+require_once './src/php/attributes/Post.php';
 
-require_once './exceptions/RouteNotFoundException.php';
+require_once './src/php/exceptions/RouteNotFoundException.php';
 
-require_once './controllers/LoginController.php';
-require_once './controllers/LibraryController.php';
+require_once './src/php/controllers/LoginController.php';
+require_once './src/php/controllers/LibraryController.php';
 
-require_once './repositories/dao/SongDAO.php';
+require_once './src/php/repositories/dao/SongDAO.php';
 
-require_once './views/library/LibraryView.php';
-require_once './views/login/LoginView.php';
+require_once './src/php/views/library/LibraryView.php';
+require_once './src/php/views/login/LoginView.php';
 
 use Shufflrio\Src\Di\Container;
 use Shufflrio\Src\Php\Attributes\Route;
