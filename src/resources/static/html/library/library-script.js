@@ -1,10 +1,11 @@
 
 window.addEventListener('load', () => {
+    const listOfSongs = []
     const songList = document.querySelector('awesomeList')
     const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
-        console.log(songs)
+        listOfSongs.put(songs)
         songList.addItems(songs)
     })
 
@@ -15,7 +16,7 @@ window.addEventListener('load', () => {
         player.data = {
             title: e.detail.title,
             artist: e.detail.artist,
-            source: getAudioSrc(e.detail.id),
+            source: getAudioSource(e.detail.id),
         }
     })
 
@@ -34,13 +35,18 @@ window.addEventListener('load', () => {
         window.location.href = shufflrUrl
     })
 
+    function getAudioSource(song) {
+        const foundSong = listOfSongs.find((it) => {
+                if(it.songId === song.songId){
+                    return it
+                }
+            }
+        )
+        return foundSong.filepath
+    }
+
 })
 
-function getAudioSrc(id) {
-    if(Number(id) === 0) return "/track1.mp3"
-    if(Number(id) === 1) return "/track2.mp3"
-    else return "/track2.mp3"
-}
 
 async function fetchSongs(url) {
     console.log(`Fetching with cookie: ${getCookie('id')}`)
