@@ -205,7 +205,7 @@ class AwesomeLogin extends HTMLElement {
                 </div>
                 <div class="input-group">
                     <label>${this.#passwordLabelText}</label>
-                    <input class="password-input" type="text" spellcheck="false" placeholder="..." value='${this.#passwordAttempt}'>
+                    <input class="password-input" type="password" spellcheck="false" placeholder="..." value='${this.#passwordAttempt}'>
                 </div>
                 <div class="button-group">
                     <button class="login-btn" type="button">${this.#loginBtnText}</button>
