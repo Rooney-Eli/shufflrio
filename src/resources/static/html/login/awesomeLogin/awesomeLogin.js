@@ -121,6 +121,7 @@ class AwesomeLogin extends HTMLElement {
                 }
                 
                 .site-stuff {
+                    font-family: 'Exo 2', sans-serif;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
