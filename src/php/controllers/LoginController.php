@@ -24,16 +24,11 @@ class LoginController {
     // could make a totally different controller for this... or just put it where it kinda makes sense
     #[Get('/')]
     public function getDefaultPage() {
-//        if(isset($_COOKIE['id'])) {
-//            LibraryView::render();
-//            die();
-//        }
-
+        if(isset($_COOKIE['id'])) {
+            LibraryView::render();
+            die();
+        }
         LoginView::render();
-
-
-//        LibraryView::render();
-
     }
 
 
