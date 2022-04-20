@@ -51,11 +51,13 @@ window.addEventListener('load', () => {
 
     function getAudioSource(songId) {
         const songs = songList.getSongs()
+        console.log(songs)
 
         const result = songs.find((song) => {
+            console.log(`Checking: ${song}`)
             return songId === song.songId
         })
-
+        console.log(`found ${result}`)
         return result.filepath
     }
 
