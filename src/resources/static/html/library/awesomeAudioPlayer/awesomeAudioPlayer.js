@@ -389,7 +389,7 @@ class AwesomeAudioPlayer extends HTMLElement {
         this.shadowRoot.innerHTML = `
             ${AwesomeAudioPlayer.#style()}
             <div class="audio-player">
-                <audio src="${this.#source}" style="display: none" autoplay crossorigin="anonymous"></audio>
+                <audio src="${this.#source}" style="display: none" autoplay></audio>
                 <div class="song-info">
                     <p class="song-title">${this.#title}</p>
                     <p class="song-artist">${this.#artist}</p>
