@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
     this.addEventListener('close-modal-event', (e) => {
         document.body.removeChild(modal)
     })
-    this.addEventListener('file-upload-event', (e) => {
+    this.addEventListener('upload-file-event', (e) => {
         console.log(`File upload captured for ${e}`)
         sendSong(e)
     })
