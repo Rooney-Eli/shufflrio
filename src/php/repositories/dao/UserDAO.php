@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Repositories\Dao;
 
-use ShufflrioShufflrApp;
+use Shufflrio\Src\Php\ShufflrApp;
 use Shufflrio\Src\Php\Database;
 use Shufflrio\Src\Php\Exceptions\NotFoundException;
 use Shufflrio\Src\Php\Models\UserCacheEntity;
