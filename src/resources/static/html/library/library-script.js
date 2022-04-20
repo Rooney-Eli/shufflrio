@@ -24,11 +24,6 @@ window.addEventListener('load', () => {
     })
 
     this.addEventListener('upload-event', (e) => {
-
-        document.body.removeChild(modal)
-    })
-
-    this.addEventListener('upload-event', (e) => {
         document.body.appendChild(modal)
     })
 
