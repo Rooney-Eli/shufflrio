@@ -2,3 +2,4 @@ import AwesomeAudioPlayer from '/src/resources/static/html/library/awesomeAudioP
 import AwesomeList from '/src/resources/static/html/library/awesomeList/awesomeList.js'
 import SongCard from '/src/resources/static/html/library/songCard/songCard.js'
 import AwesomeNavBar from "/src/resources/static/html/library/awesomeNavBar/awesomeNavBar.js"
+import AwesomeUploadModal from "/src/resources/static/html/library/awesomeUploadModal/awesomeUploadModal.js";
