@@ -20,8 +20,6 @@ class AwesomeList extends HTMLElement {
             }
             this.#activeSongId = e.detail.songId
             this.#setActive(e.detail.songId)
-
-            console.log(`AwesomeList: Active song id: ${this.#activeSongId}`)
         })
     }
 
@@ -94,7 +92,6 @@ class AwesomeList extends HTMLElement {
     }
 
     #render() {
-        console.log("AwesomeList: rendering")
         this.shadowRoot.innerHTML = `            
         ${AwesomeList.#style()}
         <div class="song-list">
