@@ -1,5 +1,4 @@
 window.addEventListener('load', () => {
-    const listOfSongs = []
     const songList = document.querySelector('awesome-list')
     const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
@@ -7,7 +6,6 @@ window.addEventListener('load', () => {
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
         console.log(songs)
         if(songs.length !== 0) {
-            listOfSongs.push(songs)
             songList.addItems(songs)
         }
     })
@@ -52,16 +50,11 @@ window.addEventListener('load', () => {
     })
 
     function getAudioSource(songId) {
+        const songs = songList.getSongs()
         console.log("Getting src")
-        // console.log(songId)
+        console.log(songs)
 
-        console.log(listOfSongs[0])
-        const song = listOfSongs[0]
-        console.log(`Song from listofSongs is ${song}`)
-        console.log(`Songid from listofSongs is ${song.songId}`)
-        console.log(`Song name from listofSongs is ${song.name}`)
-        console.log(`Song title from listofSongs is ${song.title}`)
-        return listOfSongs[0].filepath
+        return songs[0].filepath
 
         // const result = listOfSongs.find((song) => {
         //     return songId === song.songId

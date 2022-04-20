@@ -48,6 +48,10 @@ class AwesomeList extends HTMLElement {
         this.#render()
     }
 
+    getSongs() {
+        return this.#songs
+    }
+
 
     static #style() {
         return `
