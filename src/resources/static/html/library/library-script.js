@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
             console.log(`adding ${songs}`)
             listOfSongs.push(songs)
             listOfSongs.forEach((it) => {
-                console.log(it)})
+                console.log(`song: ${it}`)})
             songList.addItems(songs)
         }
     })
