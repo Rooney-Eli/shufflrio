@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
         console.log(song)
         listOfSongs.forEach((it) => {
             console.log(it)
-            if (it.songId === song.songId) {
+            if (Number(it.songId) === Number(song.songId)) {
                 console.log(it.filepath)
                 return it.filepath
             }
