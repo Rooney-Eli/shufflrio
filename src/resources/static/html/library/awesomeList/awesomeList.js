@@ -40,6 +40,10 @@ class AwesomeList extends HTMLElement {
         this.#render()
     }
 
+    removeItems() {
+        this.#songs = []
+    }
+
     search(term) {
         this.#searchTerm = term
         this.#render()

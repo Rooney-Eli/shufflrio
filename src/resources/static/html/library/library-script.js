@@ -54,8 +54,13 @@ window.addEventListener('load', () => {
 
     function sendSong(song) {
         uploadSong(shufflrUrl + '/uploadSong', song).then(() => {
-            console.log("Song Upload completed.")
             document.body.removeChild(modal)
+            fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
+                if(songs.length !== 0) {
+                    songList.removeItems()
+                    songList.addItems(songs)
+                }
+            })
         })
     }
 })
