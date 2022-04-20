@@ -9,6 +9,8 @@ window.addEventListener('load', () => {
         if(songs.length !== 0) {
             console.log(`adding ${songs}`)
             listOfSongs.push(songs)
+            listOfSongs.forEach((it) => {
+                console.log(it)})
             songList.addItems(songs)
         }
     })
@@ -53,8 +55,6 @@ window.addEventListener('load', () => {
 
 
 async function fetchSongs(url) {
-    console.log(`Fetching with cookie: ${getCookie('id')}`)
-    console.log(url)
     const customHeaders = new Headers()
     customHeaders.append("Cookie", "id=5")
 
