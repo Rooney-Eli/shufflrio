@@ -13,45 +13,44 @@ require_once './src/php/Config.php';
 //require_once './src/php/exceptions/ContainerException.php';
 //require_once './src/php/exceptions/NotFoundException.php';
 
-echo "Hello from post require use r2"; die();
 
-//use Shufflrio\Src\Php\ShufflrApp;
-//use Shufflrio\Src\Php\Config;
-//use Shufflrio\Src\Php\DotEnv;
-//use Shufflrio\Src\Di\Container;
-//use Shufflrio\Src\Php\RequestRouter;
+use Shufflrio\Src\Php\ShufflrApp;
+use Shufflrio\Src\Php\Config;
+use Shufflrio\Src\Php\DotEnv;
+use Shufflrio\Src\Di\Container;
+use Shufflrio\Src\Php\RequestRouter;
 
 
-//use Shufflrio\Src\Php\Controllers\LibraryController;
-//use Shufflrio\Src\Php\Controllers\LoginController;
-//
-//
-//$dotEnv = new DotEnv("./../.env");
-//$dotEnv->load();
-//
-//$ct = new Container();
-//$rr = new RequestRouter($ct);
-//
-//
-//try {
-//    $rr->registerRoutesFromControllerAttributes(
-//        [
-//            LoginController::class,
-//            LibraryController::class
-//        ]
-//    );
-//} catch (ReflectionException $e) {
-//    echo $e;
-//}
-//
-//(new ShufflrApp(
-//    $ct,
-//    $rr,
-//    [
-//        'uri' => $_SERVER['REQUEST_URI'],
-//        'method' => $_SERVER['REQUEST_METHOD']
-//    ],
-//    new Config($_ENV)
-//))->run();
+use Shufflrio\Src\Php\Controllers\LibraryController;
+use Shufflrio\Src\Php\Controllers\LoginController;
+
+
+$dotEnv = new DotEnv("./../.env");
+$dotEnv->load();
+
+$ct = new Container();
+$rr = new RequestRouter($ct);
+
+
+try {
+    $rr->registerRoutesFromControllerAttributes(
+        [
+            LoginController::class,
+            LibraryController::class
+        ]
+    );
+} catch (ReflectionException $e) {
+    echo $e;
+}
+
+(new ShufflrApp(
+    $ct,
+    $rr,
+    [
+        'uri' => $_SERVER['REQUEST_URI'],
+        'method' => $_SERVER['REQUEST_METHOD']
+    ],
+    new Config($_ENV)
+))->run();
 
 

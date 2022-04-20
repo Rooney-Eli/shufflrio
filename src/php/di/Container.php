@@ -22,8 +22,8 @@ require_once __DIR__ . '/../exceptions/IncorrectLoginAttemptException.php';
 require_once __DIR__ . '/../exceptions/IncorrectUsernameException.php';
 
 
-use ShufflrioSrc\php\exceptions\ContainerException;
-use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use Shufflrio\Src\php\exceptions\ContainerException;
+use Shufflrio\Src\Php\Exceptions\NotFoundException;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionParameter;

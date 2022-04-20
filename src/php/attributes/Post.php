@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Shufflrio\Src\Php\Attributes;
 
-use ShufflrioSrc\Php\HTTPMethod;
+use Shufflrio\Src\Php\HTTPMethod;
 use Attribute;
 
 #[Attribute(Attribute::TARGET_METHOD)]

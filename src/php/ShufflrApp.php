@@ -15,28 +15,27 @@ use Shufflrio\Src\Php\RequestRouter;
 use Shufflrio\Src\Php\Config;
 use ReflectionException;
 
-echo "Hello from post App use";
 class ShufflrApp {
-//    private static Database $db;
-//
-//    public function __construct(
-//        protected Container $container,
-//        protected RequestRouter $router,
-//        protected array $request,
-//        protected Config $config
-//    ) {
-//        static::$db = new Database($config->db ?? []);
-//    }
-//
-//    public static function db(): Database {
-//        return static::$db;
-//    }
-//
-//    public function run() {
-//        try {
-//            $this->router->resolve($this->request['uri'], strtolower($this->request['method']));
-//        } catch (RouteNotFoundException|ReflectionException|ContainerException|NotFoundException $e) {
-//            http_response_code(404);
-//        }
-//    }
+    private static Database $db;
+
+    public function __construct(
+        protected Container $container,
+        protected RequestRouter $router,
+        protected array $request,
+        protected Config $config
+    ) {
+        static::$db = new Database($config->db ?? []);
+    }
+
+    public static function db(): Database {
+        return static::$db;
+    }
+
+    public function run() {
+        try {
+            $this->router->resolve($this->request['uri'], strtolower($this->request['method']));
+        } catch (RouteNotFoundException|ReflectionException|ContainerException|NotFoundException $e) {
+            http_response_code(404);
+        }
+    }
 }

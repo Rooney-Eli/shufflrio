@@ -6,10 +6,10 @@ namespace Shufflrio\Src\Php\Repositories;
 
 require_once __DIR__ . '/../models/SongMapper.php';
 
-use ShufflrioSrc\Php\Exceptions\NotFoundException;
-use ShufflrioSrc\Php\Models\SongDomainEntity;
-use ShufflrioSrc\Php\Models\SongMapper;
-use ShufflrioSrc\Php\Repositories\Dao\SongDAO;
+use Shufflrio\Src\Php\Exceptions\NotFoundException;
+use Shufflrio\Src\Php\Models\SongDomainEntity;
+use Shufflrio\Src\Php\Models\SongMapper;
+use Shufflrio\Src\Php\Repositories\Dao\SongDAO;
 
 class SongRepository {
 

@@ -4,15 +4,15 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Controllers;
 
-use ShufflrioSrc\Php\Attributes\Get;
-use ShufflrioSrc\Php\Attributes\Post;
-use ShufflrioSrc\Php\Exceptions\IncorrectLoginAttemptException;
-use ShufflrioSrc\Php\Exceptions\IncorrectUsernameException;
-use ShufflrioSrc\Php\Exceptions\NotFoundException;
-use ShufflrioSrc\Php\Models\UserDomainEntity;
-use ShufflrioSrc\Php\Services\LoginService;
-use ShufflrioSrc\Php\Views\Library\LibraryView;
-use ShufflrioSrc\Php\Views\Login\LoginView;
+use Shufflrio\Src\Php\Attributes\Get;
+use Shufflrio\Src\Php\Attributes\Post;
+use Shufflrio\Src\Php\Exceptions\IncorrectLoginAttemptException;
+use Shufflrio\Src\Php\Exceptions\IncorrectUsernameException;
+use Shufflrio\Src\Php\Exceptions\NotFoundException;
+use Shufflrio\Src\Php\Models\UserDomainEntity;
+use Shufflrio\Src\Php\Services\LoginService;
+use Shufflrio\Src\Php\Views\Library\LibraryView;
+use Shufflrio\Src\Php\Views\Login\LoginView;
 use http\Header;
 
 class LoginController {
