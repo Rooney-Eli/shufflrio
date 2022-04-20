@@ -36,8 +36,7 @@ window.addEventListener('load', () => {
         document.body.removeChild(modal)
     })
     this.addEventListener('file-upload-event', (e) => {
-        sendSong()
-        document.body.removeChild(modal)
+        sendSong(e)
     })
 
 
@@ -58,7 +57,10 @@ window.addEventListener('load', () => {
     }
 
     function sendSong(song) {
-        uploadSong(shufflrUrl + '/uploadSong', song).then(() => { console.log("Song Upload completed.") })
+        uploadSong(shufflrUrl + '/uploadSong', song).then(() => {
+            console.log("Song Upload completed.")
+            document.body.removeChild(modal)
+        })
     }
 })
 
