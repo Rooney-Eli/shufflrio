@@ -98,12 +98,19 @@ class SongCard extends HTMLElement {
                     margin: 0;
                     padding: 5px;
                 }
+                
+                h3 {
+                    color: #666666
+                    flex-grow: 1;
+                    margin: 0;
+                    padding: 5px;
+                }
             
             </style>
             <div class="card-container ${this.#playing}">
                 <h2>${this.#artist}</h2>
                 <h1>${this.#title}</h1>
-                <h1>${this.#album}</h1>
+                <h3>${this.#album}</h3>
             </div>
         `
 

@@ -13,7 +13,6 @@ window.addEventListener('load', () => {
     const player = document.querySelector('awesome-audio-player')
 
     this.addEventListener('song-card-clicked-event', (e) => {
-        console.log(`Script: got data for ${e.detail.songId} `)
         player.data = {
             title: e.detail.title,
             artist: e.detail.artist,
@@ -51,18 +50,14 @@ window.addEventListener('load', () => {
 
     function getAudioSource(id) {
         const songs = songList.getSongs()
-        console.log(songs)
 
         const {filepath} = songs.find( ({songId, filepath}) => {
-            console.log(`Checking: ${songId}`)
             return Number(id) === Number(songId)
         })
-        console.log(`found ${filepath}`)
         return filepath
     }
 
     function sendSong() {
-        console.log("Uploading song!")
         uploadSong().then(() => { console.log("Song Upload completed.") })
     }
 })
