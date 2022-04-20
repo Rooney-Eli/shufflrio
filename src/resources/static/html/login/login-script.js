@@ -49,27 +49,22 @@ window.addEventListener('load', () => {
 
 
     this.addEventListener('enable-create-event', () => {
-        console.log("captured enable create event")
         awesomeLogin.data = {
             createEnable: 'engage'
         }
     })
 
     this.addEventListener('cancel-create-event', () => {
-        console.log("captured disable create event")
         awesomeLogin.data = {
             createEnable: 'disengage'
         }
     })
 
     this.addEventListener('create-event', () => {
-        console.log("captured disable create event")
         awesomeLogin.data = {
             createEnable: 'disengage'
         }
     })
-
-
 
 })
 

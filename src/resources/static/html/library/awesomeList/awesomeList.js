@@ -25,7 +25,6 @@ class AwesomeList extends HTMLElement {
 
     #setActive(id) {
         this.#activeElement = this.#songList.querySelector('[id="'+ CSS.escape(id) +'"]')
-        console.log(this.#activeElement)
 
         this.#activeElement.setAttribute('playing', 'true')
     }

@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
 
     const modal = document.createElement('awesome-upload-modal')
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
-        console.log(songs)
         if(songs.length !== 0) {
             songList.addItems(songs)
         }

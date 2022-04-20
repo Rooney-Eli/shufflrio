@@ -43,7 +43,6 @@ class SongCard extends HTMLElement {
                 this.#album = newValue
                 break
             case 'playing':
-                console.log(`Playing toggled for ${this.#songId} : ${newValue}`)
                 newValue === 'true' ? this.#playing = 'active' : this.#playing = ''
                 break
         }
