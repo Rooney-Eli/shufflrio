@@ -125,7 +125,7 @@ class AwesomeNavBar extends HTMLElement {
                     width: 40px;
                     min-width: 40px;
                     height:40px;
-                    background: url("/html/library/awesomeNavBar/search.png");
+                    background: url("/src/resources/static/html/library/awesomeNavBar/search.png");
                     background-size: cover;
                     border: none;
                 }
