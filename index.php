@@ -16,7 +16,7 @@ require_once './src/php/RequestRouter.php';
 //
 //
 //
-use Shufflrio\Src\ShufflrApp;
+use Shufflrio\Src\Php\S;
 use Shufflrio\Src\Php\Config;
 use Shufflrio\Src\Php\DotEnv;
 use Shufflrio\Src\Di\Container;
