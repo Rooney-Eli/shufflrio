@@ -43,7 +43,10 @@ window.addEventListener('load', () => {
 
     function getAudioSource(song) {
         listOfSongs.forEach((it) => {
-            if (it.songId === song.songId) return it.filepath
+            if (it.songId === song.songId) {
+                console.log(it.filepath)
+                return it.filepath
+            }
         })
         return ''
     }
