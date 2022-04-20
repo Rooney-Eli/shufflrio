@@ -19,11 +19,10 @@ require_once './repositories/dao/SongDAO.php';
 require_once './views/library/LibraryView.php';
 require_once './views/login/LoginView.php';
 
-
-use App\Src\Di\Container;
-use App\Src\Php\Attributes\Route;
-use App\Src\Php\Exceptions\ContainerException;
-use App\Src\Php\Exceptions\RouteNotFoundException;
+use Shufflrio\Src\Di\Container;
+use Shufflrio\Src\Php\Attributes\Route;
+use Shufflrio\Src\Php\Exceptions\ContainerException;
+use Shufflrio\Src\Php\Exceptions\RouteNotFoundException;
 use ReflectionAttribute;
 use ReflectionClass;
 use ReflectionException;

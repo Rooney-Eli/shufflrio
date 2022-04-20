@@ -22,7 +22,7 @@ use Shufflrio\Src\Php\DotEnv;
 use Shufflrio\Src\Di\Container;
 use Shufflrio\Src\Php\RequestRouter;
 
-echo "Hello from post namespace use"; die();
+echo "Hello from post namespace use r2"; die();
 //use Shufflrio\Src\Php\Controllers\LibraryController;
 //use Shufflrio\Src\Php\Controllers\LoginController;
 //
