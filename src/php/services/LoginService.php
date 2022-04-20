@@ -4,11 +4,11 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Services;
 
-use App\Src\Php\Exceptions\IncorrectLoginAttemptException;
-use App\Src\Php\Exceptions\IncorrectUsernameException;
-use App\Src\Php\Exceptions\NotFoundException;
-use App\Src\Php\Models\UserDomainEntity;
-use App\Src\Php\Repositories\UsersRepository;
+use ShufflrioSrc\Php\Exceptions\IncorrectLoginAttemptException;
+use ShufflrioSrc\Php\Exceptions\IncorrectUsernameException;
+use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use ShufflrioSrc\Php\Models\UserDomainEntity;
+use ShufflrioSrc\Php\Repositories\UsersRepository;
 use Exception;
 
 

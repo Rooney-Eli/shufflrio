@@ -4,9 +4,9 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Services;
 
-use App\Src\Php\Exceptions\NotFoundException;
-use App\Src\Php\Models\SongDomainEntity;
-use App\Src\Php\Repositories\SongRepository;
+use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use ShufflrioSrc\Php\Models\SongDomainEntity;
+use ShufflrioSrc\Php\Repositories\SongRepository;
 
 class LibraryService {
 

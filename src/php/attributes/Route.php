@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Shufflrio\Src\Php\Attributes;
 
 
-use App\Src\Php\HTTPMethod;
+use ShufflrioSrc\Php\HTTPMethod;
 use Attribute;
 
 #[Attribute]

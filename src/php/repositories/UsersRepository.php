@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Repositories;
 
-use App\Src\Php\Exceptions\NotFoundException;
-use App\Src\Php\Models\UserDomainEntity;
-use App\Src\Php\Models\UserMapper;
-use App\Src\Php\Repositories\Dao\UserDAO;
+use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use ShufflrioSrc\Php\Models\UserDomainEntity;
+use ShufflrioSrc\Php\Models\UserMapper;
+use ShufflrioSrc\Php\Repositories\Dao\UserDAO;
 
 require_once __DIR__ . '/../models/UserMapper.php';
 

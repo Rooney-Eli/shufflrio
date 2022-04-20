@@ -4,11 +4,11 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Controllers;
 
-use App\Src\Php\Attributes\Get;
-use App\Src\Php\Attributes\Post;
-use App\Src\Php\Exceptions\NotFoundException;
-use App\Src\Php\Models\SongDomainEntity;
-use App\Src\Php\Services\LibraryService;
+use ShufflrioSrc\Php\Attributes\Get;
+use ShufflrioSrc\Php\Attributes\Post;
+use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use ShufflrioSrc\Php\Models\SongDomainEntity;
+use ShufflrioSrc\Php\Services\LibraryService;
 
 
 class LibraryController {

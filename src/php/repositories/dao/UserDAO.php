@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php\Repositories\Dao;
 
-use App\ShufflrApp;
-use App\Src\Php\Database;
-use App\Src\Php\Exceptions\NotFoundException;
-use App\Src\Php\Models\UserCacheEntity;
+use ShufflrioShufflrApp;
+use ShufflrioSrc\Php\Database;
+use ShufflrioSrc\Php\Exceptions\NotFoundException;
+use ShufflrioSrc\Php\Models\UserCacheEntity;
 use PDO;
 
 require_once __DIR__ . '/../../models/UserCacheEntity.php';
