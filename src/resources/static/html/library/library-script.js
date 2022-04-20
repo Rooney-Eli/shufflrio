@@ -42,16 +42,10 @@ window.addEventListener('load', () => {
     })
 
     function getAudioSource(song) {
-        const foundSong = listOfSongs.find((it) => {
-            console.log(it)
-                if(it.songId === song.songId){
-                    return it
-                }
-            }
-        )
-        console.log(foundSong.filepath)
-        console.log(foundSong)
-        return foundSong.filepath
+        listOfSongs.forEach((it) => {
+            if (it.songId === song.songId) return it.filepath
+        })
+        return ''
     }
 
 })
