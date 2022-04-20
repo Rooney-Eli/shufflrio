@@ -227,7 +227,7 @@ class AwesomeAudioPlayer extends HTMLElement {
                 
                 
                 .play-btn {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*2) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*2) center/1000%  100% no-repeat;
                     background-size: cover;
                     appearance: none;      
                     border: none;   
@@ -235,11 +235,11 @@ class AwesomeAudioPlayer extends HTMLElement {
                     overflow: hidden;  
                 }           
                 .play-btn.playing {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*3) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*3) center/1000%  100% no-repeat;
                 }
     
                .previous-btn {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*7) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*7) center/1000%  100% no-repeat;
                     background-size: cover;
                     appearance: none;      
                     border: none;   
@@ -248,7 +248,7 @@ class AwesomeAudioPlayer extends HTMLElement {
                 }           
                 
                 .next-btn {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*6) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*6) center/1000%  100% no-repeat;
                     background-size: cover;
                     appearance: none;      
                     border: none;   
@@ -256,7 +256,7 @@ class AwesomeAudioPlayer extends HTMLElement {
                     overflow: hidden;  
                 }
                 .repeat-btn {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*1) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*1) center/1000%  100% no-repeat;
                     background-size: cover;
                     appearance: none;      
                     border: none;   
@@ -267,7 +267,7 @@ class AwesomeAudioPlayer extends HTMLElement {
                     filter: invert(100%)
                 }
                 .shuffle-btn {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") 0 center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") 0 center/1000%  100% no-repeat;
                     background-size: cover;
                     appearance: none;      
                     border: none;   
@@ -276,13 +276,13 @@ class AwesomeAudioPlayer extends HTMLElement {
                 }
                 
                 .volume-bar {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*9) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*9) center/1000%  100% no-repeat;
                     background-size: cover;
                     position: relative;
                 }
                 
                 .volume-bar.muted {
-                    background: url("/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*8) center/1000%  100% no-repeat;
+                    background: url("/src/resources/static/html/library/awesomeAudioPlayer/white-sprite-stripe.png") calc((100%/9)*8) center/1000%  100% no-repeat;
                 }
     
                 

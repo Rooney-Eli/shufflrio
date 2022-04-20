@@ -1,7 +1,7 @@
 
 window.addEventListener('load', () => {
     const songList = document.querySelector('awesomeList')
-    const shufflrUrl = 'https://shufflrio.herokuapp.com/'
+    const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
         console.log(songs)

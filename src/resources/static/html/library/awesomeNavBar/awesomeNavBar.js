@@ -84,19 +84,19 @@ class AwesomeNavBar extends HTMLElement {
                 }
                 .logo {
 
-                   background: url("/html/library/awesomeNavBar/logo.png");
+                   background: url("/src/resources/static/html/library/awesomeNavBar/logo.png");
                    background-size: cover;
                 }
 
                 .upload-btn {
                     border-radius: 10px;
-                    background: url("/html/library/awesomeNavBar/upload.png");
+                    background: url("/src/resources/static/html/library/awesomeNavBar/upload.png");
                     background-size: cover;
                 }
                 
                 .logout-btn {
                     border-radius: 10px;
-                    background: url("/html/library/awesomeNavBar/logout.png");
+                    background: url("/src/resources/static/html/library/awesomeNavBar/logout.png");
                     background-size: cover;
                 }
                 
