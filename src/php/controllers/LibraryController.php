@@ -26,55 +26,24 @@ class LibraryController {
             die();
         }
 
-
         $ownerId = intval($_COOKIE['id']);
 
-        if(isset($_POST["songName"])) {
-            $songName = $_POST["songName"];
-        } else {
-            echo http_response_code(400); //bad request
-            die();
-        }
+        $json = file_get_contents('php://input');
+        $data = json_decode($json, true);
 
-        if(isset($_POST["songArtist"])) {
-            $songArtist = $_POST["songArtist"];
-        } else {
-            echo http_response_code(400); //bad request
-            die();
-        }
-
-        if(isset($_POST["songAlbum"])) {
-            $songAlbum = $_POST["songAlbum"];
-        } else {
-            echo http_response_code(400); //bad request
-            die();
-        }
-
-
-
-        if(isset($_FILES['songFile'])) {
-            if($_FILES['songFile']['error'] == 0) {
-                $target_dir = __DIR__ . '/../../uploads/songs/"';
-                $songFilePath = uniqid() . ".mp3";
-                move_uploaded_file($_FILES['songFile']['tmp_name'], $target_dir . $songFilePath);
-                $filePath = $target_dir . $songFilePath;
-            } else {
-                echo http_response_code(400); //bad request
-                die();
-            }
-        } else {
-            echo http_response_code(400); //bad request
-            die();
-        }
+        $name = $data['title'];
+        $artist = $data['artist'];
+        $album = $data['album'];
+        $filepath = $data['filepath'];
 
 
         $songDomainEntity = new SongDomainEntity(
             ownerId: $ownerId,
             songId: -1,
-            name: $songName,
-            artist: $songArtist,
-            album: $songAlbum,
-            filepath: $filePath,
+            name: $name,
+            artist: $artist,
+            album: $album,
+            filepath: $filepath,
         );
 
         $this->libraryService->addSong($songDomainEntity);
