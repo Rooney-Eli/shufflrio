@@ -36,6 +36,8 @@ class LibraryController {
         $album = $data['album'];
         $filepath = $data['filepath'];
 
+        var_dump($data);
+        die();
 
         $songDomainEntity = new SongDomainEntity(
             ownerId: $ownerId,
