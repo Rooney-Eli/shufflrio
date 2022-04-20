@@ -1,5 +1,3 @@
-import awesomeLogin from "../login/awesomeLogin/awesomeLogin";
-
 window.addEventListener('load', () => {
     const listOfSongs = []
     const songList = document.querySelector('awesome-list')
