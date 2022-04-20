@@ -31,6 +31,7 @@ window.addEventListener('load', () => {
         document.body.removeChild(modal)
     })
     this.addEventListener('file-upload-event', (e) => {
+        console.log(`File upload captured for ${e}`)
         sendSong(e)
     })
 
