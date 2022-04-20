@@ -16,7 +16,9 @@ require_once './src/php/ShufflrApp.php';
 //
 //
 //
-//use Shufflrio\Src\ShufflrApp;
+use Shufflrio\Src\ShufflrApp;
+
+echo "Hello from post namespace use"; die();
 //use Shufflrio\Src\Di\Container;
 //use Shufflrio\Src\Php\Config;
 //use Shufflrio\Src\Php\Controllers\LibraryController;

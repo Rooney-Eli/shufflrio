@@ -1,7 +1,7 @@
-<?php echo "Hello from app"; die();
-//
-//namespace App;
-//
+<?php
+
+namespace App;
+
 //require_once './Database.php';
 //
 //use App\Src\Di\Container;
