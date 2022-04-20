@@ -67,10 +67,10 @@ async function uploadSong(url, song) {
     customHeaders.append("Cookie", `id=${cookie}`)
 
     const body = JSON.stringify( {
-        title: song.title,
-        artist: song.artist,
-        album: song.album,
-        filepath: song.filepath
+        title: song.detail.title,
+        artist: song.detail.artist,
+        album: song.detail.album,
+        filepath: song.detail.filepath
     })
 
     const response = await fetch(url, {
