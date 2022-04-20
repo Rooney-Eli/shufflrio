@@ -18,11 +18,11 @@ window.addEventListener('load', () => {
     const player = document.querySelector('awesome-audio-player')
 
     this.addEventListener('song-card-clicked-event', (e) => {
-        console.log(`Script: got data for ${e.detail.id} `)
+        console.log(`Script: got data for ${e.detail.songId} `)
         player.data = {
             title: e.detail.title,
             artist: e.detail.artist,
-            source: getAudioSource(e.detail.id),
+            source: getAudioSource(e.detail.songId),
         }
     })
 
@@ -43,6 +43,7 @@ window.addEventListener('load', () => {
 
     function getAudioSource(song) {
         const foundSong = listOfSongs.find((it) => {
+            console.log(it)
                 if(it.songId === song.songId){
                     return it
                 }
