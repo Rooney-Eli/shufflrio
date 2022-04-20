@@ -53,9 +53,9 @@ window.addEventListener('load', () => {
         const songs = songList.getSongs()
         console.log(songs)
 
-        const {filepath} = songs.find(({songId}) => {
+        const {filepath} = songs.find( ({songId, filepath}) => {
             console.log(`Checking: ${songId}`)
-            return id === songId
+            return Number(id) === Number(songId)
         })
         console.log(`found ${filepath}`)
         return filepath
