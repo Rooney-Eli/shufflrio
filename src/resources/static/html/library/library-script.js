@@ -54,12 +54,12 @@ window.addEventListener('load', () => {
     function getAudioSource(songId) {
         console.log("Getting src")
         console.log(songId)
-        const result = listOfSongs.find((song) => {
+        const {filepath} = listOfSongs.find((song) => {
             return songId === song.songId
         })
 
-        console.log(result)
-        return result.filepath
+        console.log(filepath)
+        return filepath
     }
 
     function sendSong() {
