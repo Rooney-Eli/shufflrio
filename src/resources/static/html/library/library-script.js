@@ -42,14 +42,15 @@ window.addEventListener('load', () => {
     })
 
     function getAudioSource(songId) {
+        console.log("Getting src")
         console.log(songId)
-        listOfSongs.forEach((it) => {
-            console.log(it)
-            if (Number(it.songId) === Number(songId)) {
-                console.log(it.filepath)
-                return it.filepath
+        for (const song in listOfSongs) {
+            console.log(song)
+            if (Number(song.songId) === Number(songId)) {
+                console.log(song.filepath)
+                return song.filepath
             }
-        })
+        }
         return ''
     }
 
