@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
     })
 
     this.addEventListener('upload-event', (e) => {
-        console.log("Upload event captured")
+        document.body.removeChild(modal)
     })
 
     this.addEventListener('upload-event', (e) => {
