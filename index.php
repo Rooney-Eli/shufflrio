@@ -24,7 +24,7 @@ use Shufflrio\Src\Php\Controllers\LibraryController;
 use Shufflrio\Src\Php\Controllers\LoginController;
 
 
-$dotEnv = new DotEnv(".env");
+$dotEnv = new DotEnv("./src/.env");
 $dotEnv->load();
 
 $ct = new Container();
