@@ -19,10 +19,10 @@ class SongMapper {
         );
     }
 
-    function mapDomainEntityToCacheEntity(SongDomainEntity $domainEntity, int $ownerId): SongCacheEntity {
+    function mapDomainEntityToCacheEntity(SongDomainEntity $domainEntity): SongCacheEntity {
         return new SongCacheEntity(
             id: -1,
-            ownerId: $ownerId,
+            ownerId: $domainEntity->ownerId,
             name: $domainEntity->name,
             artist: $domainEntity->artist,
             album: $domainEntity->album,

@@ -19,9 +19,8 @@ class SongRepository {
     ) {}
 
     public function addSong(SongDomainEntity $songDomainEntity) {
-        $ownerId = 5; //TODO: Get this from the session ID eventually
         $this->songDao->createSong(
-            $this->songMapper->mapDomainEntityToCacheEntity($songDomainEntity, $ownerId)
+            $this->songMapper->mapDomainEntityToCacheEntity($songDomainEntity)
         );
 
     }
