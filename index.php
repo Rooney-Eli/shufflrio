@@ -1,11 +1,11 @@
 <?php
 
 declare(strict_types = 1);
-require_once './src/php/ShufflrApp.php';
+//require_once './src/php/ShufflrApp.php';
 require_once './src/php/Config.php';
-require_once './src/php/DotEnv.php';
-require_once './src/php/di/Container.php';
-require_once './src/php/RequestRouter.php';
+//require_once './src/php/DotEnv.php';
+//require_once './src/php/di/Container.php';
+//require_once './src/php/RequestRouter.php';
 //require_once './src/php/controllers/LoginController.php';
 //require_once './src/php/controllers/LibraryController.php';
 //require_once './src/php/models/SongCacheEntity.php';

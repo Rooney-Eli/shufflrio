@@ -3,7 +3,7 @@
 declare(strict_types = 1);
 
 namespace Shufflrio\Src\Php;
-
+echo "Hello from config ns";
 class Config
 {
     protected array $config = [];
