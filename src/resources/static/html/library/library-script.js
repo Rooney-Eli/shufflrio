@@ -41,11 +41,11 @@ window.addEventListener('load', () => {
         window.location.href = shufflrUrl
     })
 
-    function getAudioSource(song) {
-        console.log(song)
+    function getAudioSource(songId) {
+        console.log(songId)
         listOfSongs.forEach((it) => {
             console.log(it)
-            if (Number(it.songId) === Number(song.songId)) {
+            if (Number(it.songId) === Number(songId.songId)) {
                 console.log(it.filepath)
                 return it.filepath
             }
