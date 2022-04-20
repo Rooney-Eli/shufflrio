@@ -5,8 +5,10 @@ window.addEventListener('load', () => {
     const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
-        listOfSongs.push(songs)
-        songList.addItems(songs)
+        if(songs.length !== 0) {
+            listOfSongs.push(songs)
+            songList.addItems(songs)
+        }
     })
 
     const player = document.querySelector('awesome-audio-player')
