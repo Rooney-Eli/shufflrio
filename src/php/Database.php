@@ -7,8 +7,8 @@ use PDOException;
 use PDOStatement;
 
 echo "Hello from database post use";
-//
-//class Database {
+
+class Database {
 //    protected PDO $pdo;
 //
 //    public function __construct(array $config) {
@@ -28,4 +28,4 @@ echo "Hello from database post use";
 //        return $this->pdo->prepare($query);
 //    }
 //
-//}
+}
