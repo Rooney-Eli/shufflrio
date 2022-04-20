@@ -51,7 +51,7 @@ window.addEventListener('load', () => {
                 return song.filepath
             }
         }
-        return ''
+        return "https://gorilla-tracks.s3.us-west-2.amazonaws.com/music/704.ogg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220420T042258Z&X-Amz-SignedHeaders=host&X-Amz-Expires=14400&X-Amz-Credential=AKIAJIAKDDLEY424ICFA%2F20220420%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=6672cd3a4e310cb6fae38c9869f86cc1c8c4755b1081a9dc4ecef32bc599d9bb"
     }
 
 })
