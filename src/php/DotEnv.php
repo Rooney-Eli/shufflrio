@@ -13,6 +13,7 @@ class DotEnv {
         private readonly string $path
     ) {
         if(!file_exists($this->path)) {
+            var_dump($this->path);
             throw new InvalidArgumentException("Invalid path to .env file: $path");
         }
     }
