@@ -1,1 +1,1 @@
-import awesomeLogin from "/html/login/awesomeLogin/awesomeLogin.js"
+import awesomeLogin from "/src/resources/static/html/login/awesomeLogin/awesomeLogin.js"
