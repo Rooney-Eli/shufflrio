@@ -49,16 +49,16 @@ window.addEventListener('load', () => {
         window.location.href = shufflrUrl
     })
 
-    function getAudioSource(songId) {
+    function getAudioSource(id) {
         const songs = songList.getSongs()
         console.log(songs)
 
-        const result = songs.find((song) => {
-            console.log(`Checking: ${song}`)
-            return songId === song.songId
+        const {filepath} = songs.find(({songId}) => {
+            console.log(`Checking: ${songId}`)
+            return id === songId
         })
-        console.log(`found ${result}`)
-        return result.filepath
+        console.log(`found ${filepath}`)
+        return filepath
     }
 
     function sendSong() {
