@@ -1,73 +1,74 @@
 window.addEventListener('load', () => {
-    const shufflrUrl = ''//'127.0.0.1:8080'
-
-    const awesomeLogin = document.querySelector('awesome-login')
-
-    this.addEventListener('login-event', (e) => {
-        authenticateUser(shufflrUrl + '/authenticateUser', e.detail.username, e.detail.password).then(result => {
-            const {error} = result
-            const {id} = result
-            if(error !== undefined) {
-                if(error === 'username'){
-                    awesomeLogin.data = {
-                        username: 'error'
-                    }
-                } else {
-                    awesomeLogin.data = {
-                        password: 'error'
-                    }
-                }
-            }
-            if(id !== undefined) {
-                window.location.reload()
-            }
-        })
-    })
-
-    this.addEventListener('create-event', (e) => {
-        createUser(shufflrUrl + '/createUser', e.detail.username, e.detail.password).then(result => {
-            const {error} = result
-            const {id} = result
-            if(error !== undefined) {
-                if(error === 'username'){
-                    awesomeLogin.data = {
-                        username: 'error'
-                    }
-
-                } else {
-                    awesomeLogin.data = {
-                        password: 'error'
-                    }
-                }
-            }
-            if(id !== undefined) {
-                window.location.reload()
-            }
-        })
-    })
-
-
-    this.addEventListener('enable-create-event', () => {
-        console.log("captured enable create event")
-        awesomeLogin.data = {
-            createEnable: 'engage'
-        }
-    })
-
-    this.addEventListener('cancel-create-event', () => {
-        console.log("captured disable create event")
-        awesomeLogin.data = {
-            createEnable: 'disengage'
-        }
-    })
-
-    this.addEventListener('create-event', () => {
-        console.log("captured disable create event")
-        awesomeLogin.data = {
-            createEnable: 'disengage'
-        }
-    })
-
+    console.log("Hello world!")
+    // const shufflrUrl = ''//'127.0.0.1:8080'
+    //
+    // const awesomeLogin = document.querySelector('awesome-login')
+    //
+    // this.addEventListener('login-event', (e) => {
+    //     authenticateUser(shufflrUrl + '/authenticateUser', e.detail.username, e.detail.password).then(result => {
+    //         const {error} = result
+    //         const {id} = result
+    //         if(error !== undefined) {
+    //             if(error === 'username'){
+    //                 awesomeLogin.data = {
+    //                     username: 'error'
+    //                 }
+    //             } else {
+    //                 awesomeLogin.data = {
+    //                     password: 'error'
+    //                 }
+    //             }
+    //         }
+    //         if(id !== undefined) {
+    //             window.location.reload()
+    //         }
+    //     })
+    // })
+    //
+    // this.addEventListener('create-event', (e) => {
+    //     createUser(shufflrUrl + '/createUser', e.detail.username, e.detail.password).then(result => {
+    //         const {error} = result
+    //         const {id} = result
+    //         if(error !== undefined) {
+    //             if(error === 'username'){
+    //                 awesomeLogin.data = {
+    //                     username: 'error'
+    //                 }
+    //
+    //             } else {
+    //                 awesomeLogin.data = {
+    //                     password: 'error'
+    //                 }
+    //             }
+    //         }
+    //         if(id !== undefined) {
+    //             window.location.reload()
+    //         }
+    //     })
+    // })
+    //
+    //
+    // this.addEventListener('enable-create-event', () => {
+    //     console.log("captured enable create event")
+    //     awesomeLogin.data = {
+    //         createEnable: 'engage'
+    //     }
+    // })
+    //
+    // this.addEventListener('cancel-create-event', () => {
+    //     console.log("captured disable create event")
+    //     awesomeLogin.data = {
+    //         createEnable: 'disengage'
+    //     }
+    // })
+    //
+    // this.addEventListener('create-event', () => {
+    //     console.log("captured disable create event")
+    //     awesomeLogin.data = {
+    //         createEnable: 'disengage'
+    //     }
+    // })
+    //
 
 
 })
