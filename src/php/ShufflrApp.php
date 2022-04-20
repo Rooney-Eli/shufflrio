@@ -15,7 +15,7 @@ use Shufflrio\Src\Php\RequestRouter;
 use Shufflrio\Src\Php\Config;
 use ReflectionException;
 
-
+echo "Hello from post App use";
 class ShufflrApp {
     private static Database $db;
 

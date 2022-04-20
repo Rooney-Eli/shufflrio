@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types = 1);
-//require_once './src/php/ShufflrApp.php';
+require_once './src/php/ShufflrApp.php';
 require_once './src/php/Config.php';
 //require_once './src/php/DotEnv.php';
 //require_once './src/php/di/Container.php';
