@@ -106,8 +106,9 @@ class LibraryController {
             header('Content-Type: application/json; charset=utf-8');
             echo $responseJson;
         } catch (NotFoundException) {
-            http_response_code(404);
-            die();
+            $responseJson = json_encode([]);
+            header('Content-Type: application/json; charset=utf-8');
+            echo $responseJson;
         }
 
     }

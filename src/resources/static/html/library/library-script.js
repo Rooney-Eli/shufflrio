@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
     fetchSongs(shufflrUrl + '/getAllSongs').then(songs => {
-        listOfSongs.put(songs)
+        listOfSongs.push(songs)
         songList.addItems(songs)
     })
 
