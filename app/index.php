@@ -2,20 +2,20 @@
 
 declare(strict_types = 1);
 
-require_once 'ShufflrApp.php';
-require_once 'Config.php';
-require_once './DotEnv.php';
-require_once './di/Container.php';
-require_once './controllers/LoginController.php';
-require_once './controllers/LibraryController.php';
-require_once './RequestRouter.php';
-require_once './models/SongCacheEntity.php';
-require_once './exceptions/RouteNotFoundException.php';
-require_once './exceptions/ContainerException.php';
-require_once './exceptions/NotFoundException.php';
+require_once './src/php/ShufflrApp.php';
+require_once './src/php/Config.php';
+require_once './src/php/DotEnv.php';
+require_once './src/php/di/Container.php';
+require_once './src/php/controllers/LoginController.php';
+require_once './src/php/controllers/LibraryController.php';
+require_once './src/php/RequestRouter.php';
+require_once './src/php/models/SongCacheEntity.php';
+require_once './src/php/exceptions/RouteNotFoundException.php';
+require_once './src/php/exceptions/ContainerException.php';
+require_once './src/php/exceptions/NotFoundException.php';
 
 
-use App\ShufflrApp;
+use App\Src\ShufflrApp;
 use App\Src\Di\Container;
 use App\Src\Php\Config;
 use App\Src\Php\Controllers\LibraryController;
