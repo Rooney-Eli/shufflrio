@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     console.log("Hello, world!")
-    const shufflrUrl = 'https://shufflrio.herokuapp.com/'
+    const shufflrUrl = 'https://shufflrio.herokuapp.com'
 
     const awesomeLogin = document.querySelector('awesome-login')
 
