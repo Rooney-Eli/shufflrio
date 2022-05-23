@@ -1,7 +1,7 @@
 # Shufflr
 A web based media player for streaming music anywhere at any time.
 
-Find online at **[shufflrio.herokuapp.com](shufflrio.herokuapp.com)**
+Find online at **[www.shufflrio.herokuapp.com](shufflrio.herokuapp.com)**
 
 Don't want to make an account? Watch the demo video instead!
 
